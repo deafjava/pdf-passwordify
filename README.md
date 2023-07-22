@@ -20,8 +20,16 @@ In the context of the PDF Passwordify project, the components can be mapped to t
 - Diplomat: This component can be seen as a "Port". It defines the contract for how the application interacts with the outside world. It handles the output of results and system operations, effectively serving as the interface between the core application (the "Logic") and the external systems (like the file system or the user interface).
 
 - Logic: This is the domain of the application. It contains the core logic of the application, including the CLI and SO.
-## Usage
+##Usage
 To use PDF Passwordify, you need to have Clojure installed on your system. Once you have that, you can run the project using the command line interface.
 
+To run the project, navigate to the project directory and use the following command:
+
+```
+lein run --o <source-directory> --d <destination-directory>
+```
+Replace <source-directory> with the path to the directory containing the PDF files you want to password-protect, and <destination-directory> with the path to the directory where you want to save the password-protected PDF files.
+
+Remember to provide additional instructions as necessary, such as how to install Clojure and Leiningen, or how to navigate to the project directory.
 ## License
 PDF Passwordify is licensed under the Eclipse Public License 1.0.
